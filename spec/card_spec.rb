@@ -3,7 +3,7 @@
 RSpec.describe Rb21::Card do
   let(:normal) { Rb21::Card::NORMALS.sample }
   let(:suit) { Rb21::Card::SUITS.sample }
-  let(:face_cards) { Rb21::Card::FACES }
+  let(:ten_cards) { Rb21::Card::TEN_VALUES }
   let(:ace) { Rb21::Card::ACE }
 
   it "has a name" do
@@ -28,9 +28,9 @@ RSpec.describe Rb21::Card do
     end
   end
 
-  it "has a value for ten for jacks, queens, and kings" do
-    face_cards.each do |face|
-      expect(Rb21::Card.new(face, suit).value).to eq([10])
+  it "has a value for ten for 10s, jacks, queens, and kings" do
+    ten_cards.each do |card_name|
+      expect(Rb21::Card.new(card_name, suit).value).to eq([10])
     end
   end
 

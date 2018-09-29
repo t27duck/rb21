@@ -4,9 +4,10 @@ module Rb21
   class Card
     SUITS = %w[Clubs Diamonds Hearts Spades].freeze
     FACES = %w[Jack Queen King].freeze
-    NORMALS = (2..10).map(&:to_s).freeze
+    NORMALS = (2..9).map(&:to_s).freeze
     ACE = "Ace"
-    ALL_NAMES = (FACES + NORMALS + [ACE]).freeze
+    TEN_VALUES = (["10"] + FACES).freeze
+    ALL_NAMES = (TEN_VALUES + NORMALS + [ACE]).freeze
     attr_reader :name, :suit
 
     def initialize(name, suit)
@@ -20,7 +21,7 @@ module Rb21
       case @name
       when ACE
         [1, 11]
-      when *FACES
+      when *TEN_VALUES
         [10]
       else
         [@name.to_i]
