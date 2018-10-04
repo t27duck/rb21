@@ -1,8 +1,10 @@
 # Rb21
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rb21`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Build Status](https://travis-ci.org/t27duck/rb21.svg?branch=master)](https://travis-ci.org/t27duck/rb21)
 
-TODO: Delete this and the text above, and describe your gem
+This is a basic implementation of the game of 21 (blackjack) in Ruby. This is mainly here to serve as an example gem to try to get junior developers more comfortable in contributing.
+
+This gem implements `Rb21::Hand`, `Rb21::Card`, and `Rb21::Deck`. The specs should be enough to show the current capabilities of each.
 
 ## Installation
 
