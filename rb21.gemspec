@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["t27duck@gmail.com"]
 
   spec.summary       = "A basic implementation for the game of 21 (Blackjack)"
-  spec.description   = "An example gem that can surve as a base for making a Blackjack game in Ruby"
+  spec.description   = "An example gem that can serve as a base for making a blackjack game in Ruby"
   spec.homepage      = "https://github.com/t27duck/rb21"
   spec.license       = "MIT"
 
