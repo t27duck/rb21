@@ -1,6 +1,6 @@
 # Rb21
 
-[![Build Status](https://travis-ci.org/t27duck/rb21.svg?branch=master)](https://travis-ci.org/t27duck/rb21)
+[![Build Status](https://travis-ci.org/t27duck/rb21.svg?branch=main)](https://travis-ci.org/t27duck/rb21)
 
 This is a basic implementation of the game of 21 (blackjack) in Ruby. This is mainly here to serve as an example gem to try to get junior developers more comfortable in contributing.
 
